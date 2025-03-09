@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bciqgx0fnsiw3"]
+
+[ext_resource type="Script" uid="uid://d2wvwyt7lhfoq" path="res://objects/battle/battle_resources/status_effects/status_effect_drenched.gd" id="1_5uj7t"]
+
+[resource]
+script = ExtResource("1_5uj7t")
+stat = "defense"
+boost = 0.8
+quality = 1
+rounds = 2
+icon_color = Color(1, 1, 1, 1)
+icon_scale = 1.0
+mini_icon_color = Color(1, 1, 1, 1)
+mini_icon_scale = 1.0
+visible = true
+description = "This is a Status Effect"
+status_name = "Status Effect"
+id = 4
+_generate_id = false
