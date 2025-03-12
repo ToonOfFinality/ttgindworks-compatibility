@@ -1,26 +1,30 @@
 [gd_resource type="Resource" script_class="Track" load_steps=33 format=3 uid="uid://5dld88ul3rb5"]
 
 [ext_resource type="Script" uid="uid://cwnjrxjvy5kc3" path="res://objects/battle/battle_resources/toon_attacks/toon_attack.gd" id="1_jr3yh"]
+[ext_resource type="Texture2D" uid="uid://d3s8uol0n1834" path="res://ui_assets/battle/gags/inventory_bannana_peel.png" id="2_benr5"]
 [ext_resource type="PackedScene" uid="uid://dha1jvcr7co3d" path="res://models/props/gags/banana_peel/banana_peel.tscn" id="3_u2s4r"]
 [ext_resource type="Script" uid="uid://cgs0v0f7jhwsc" path="res://objects/battle/battle_resources/toon_attacks/trap_toss.gd" id="4_swcev"]
 [ext_resource type="AudioStream" uid="uid://ckic65w7wfr7l" path="res://audio/sfx/battle/gags/trap/TL_banana.ogg" id="5_1x2ri"]
+[ext_resource type="Texture2D" uid="uid://c4vottciuoo6o" path="res://ui_assets/battle/gags/inventory_rake.png" id="6_5b7gx"]
 [ext_resource type="PackedScene" uid="uid://cavvmjdli6ww1" path="res://models/props/gags/rake/rake.tscn" id="7_k4nyl"]
 [ext_resource type="AudioStream" uid="uid://mj7vdx8oi0dm" path="res://audio/sfx/battle/gags/trap/TL_rake_throw_only.ogg" id="8_yeylq"]
+[ext_resource type="Texture2D" uid="uid://c312k6k81b08" path="res://ui_assets/battle/gags/inventory_marbles.png" id="9_lq75l"]
 [ext_resource type="PackedScene" uid="uid://bx4qgugxa0mos" path="res://models/props/gags/marbles/marbles.tscn" id="10_h22uw"]
 [ext_resource type="AudioStream" uid="uid://cgfiap65t8c7o" path="res://audio/sfx/battle/gags/trap/TL_marbles.ogg" id="11_0ofh8"]
+[ext_resource type="Texture2D" uid="uid://b738dk1seameu" path="res://ui_assets/battle/gags/inventory_quicksand_icon.png" id="12_krsdu"]
 [ext_resource type="PackedScene" uid="uid://bsjwo3t3pgtyw" path="res://models/props/gags/quicksand/quicksand.glb" id="13_ab7jr"]
 [ext_resource type="Script" uid="uid://cadbacipbjc11" path="res://objects/battle/battle_resources/toon_attacks/trap_fall.gd" id="14_p7agb"]
 [ext_resource type="AudioStream" uid="uid://bxcb1bvyobtls" path="res://audio/sfx/battle/gags/trap/TL_quicksand.ogg" id="15_ke5jd"]
+[ext_resource type="Texture2D" uid="uid://dllr28f4s08g" path="res://ui_assets/battle/gags/inventory_trapdoor.png" id="16_xkgso"]
 [ext_resource type="PackedScene" uid="uid://54b8v4xqohhn" path="res://models/props/gags/trapdoor/trapdoor.glb" id="17_815db"]
 [ext_resource type="AudioStream" uid="uid://bq1wtlespqeec" path="res://audio/sfx/battle/gags/trap/TL_trap_door.ogg" id="18_prpj5"]
+[ext_resource type="Texture2D" uid="uid://bnp25lefvy2ta" path="res://ui_assets/battle/gags/inventory_portable_hole.png" id="19_ygsnx"]
 [ext_resource type="PackedScene" uid="uid://cp2ncy4ta6ubt" path="res://objects/misc/teleport_hole/teleport_hole.tscn" id="20_hs0x2"]
 [ext_resource type="PackedScene" uid="uid://dsgjdbl5ivwss" path="res://models/props/gags/tnt/tnt.tscn" id="20_xkotm"]
 [ext_resource type="AudioStream" uid="uid://b6fgn0i8wr1pk" path="res://audio/sfx/battle/gags/trap/TL_dynamite.ogg" id="21_dfefd"]
 [ext_resource type="AudioStream" uid="uid://d1fg8oarn1xpo" path="res://audio/sfx/toon/AV_teleport.ogg" id="21_uwxdx"]
 [ext_resource type="Script" uid="uid://b6b6pfoqyolr" path="res://objects/battle/battle_resources/gag_loadouts/track.gd" id="22_lrt3n"]
-
-[sub_resource type="Resource" id="Resource_k4nre"]
-metadata/__load_path__ = "res://ui_assets/battle/gags/inventory_bannana_peel.png"
+[ext_resource type="Texture2D" uid="uid://qdx2c3oyhq3w" path="res://ui_assets/battle/gags/inventory_tnt.png" id="22_pserm"]
 
 [sub_resource type="Resource" id="Resource_73lf0"]
 script = ExtResource("4_swcev")
@@ -28,15 +32,12 @@ model = ExtResource("3_u2s4r")
 toss_time = 1.5
 animation = 0
 toss_sfx = ExtResource("5_1x2ri")
-icon = SubResource("Resource_k4nre")
+icon = ExtResource("2_benr5")
 damage = 16
 crit_chance_mod = 1.0
 target_type = 0
 action_name = "Banana Peel"
 one_time_use = false
-
-[sub_resource type="Resource" id="Resource_tcp41"]
-metadata/__load_path__ = "res://ui_assets/battle/gags/inventory_rake.png"
 
 [sub_resource type="Resource" id="Resource_dut7k"]
 script = ExtResource("4_swcev")
@@ -44,15 +45,12 @@ model = ExtResource("7_k4nyl")
 toss_time = 1.5
 animation = 1
 toss_sfx = ExtResource("8_yeylq")
-icon = SubResource("Resource_tcp41")
+icon = ExtResource("6_5b7gx")
 damage = 25
 crit_chance_mod = 1.0
 target_type = 0
 action_name = "Rake"
 one_time_use = false
-
-[sub_resource type="Resource" id="Resource_0507m"]
-metadata/__load_path__ = "res://ui_assets/battle/gags/inventory_marbles.png"
 
 [sub_resource type="Resource" id="Resource_f0nrw"]
 script = ExtResource("4_swcev")
@@ -60,60 +58,48 @@ model = ExtResource("10_h22uw")
 toss_time = 0.01
 animation = 0
 toss_sfx = ExtResource("11_0ofh8")
-icon = SubResource("Resource_0507m")
+icon = ExtResource("9_lq75l")
 damage = 40
 crit_chance_mod = 1.0
 target_type = 0
 action_name = "Marbles"
 one_time_use = false
 
-[sub_resource type="Resource" id="Resource_7v0b5"]
-metadata/__load_path__ = "res://ui_assets/battle/gags/inventory_quicksand_icon.png"
-
 [sub_resource type="Resource" id="Resource_nxdef"]
 script = ExtResource("14_p7agb")
 model = ExtResource("13_ab7jr")
 sfx = ExtResource("15_ke5jd")
 trap_type = 0
-icon = SubResource("Resource_7v0b5")
+icon = ExtResource("12_krsdu")
 damage = 70
 crit_chance_mod = 1.0
 target_type = 0
 action_name = "Quicksand"
 one_time_use = false
 
-[sub_resource type="Resource" id="Resource_uh01e"]
-metadata/__load_path__ = "res://ui_assets/battle/gags/inventory_trapdoor.png"
-
 [sub_resource type="Resource" id="Resource_w688w"]
 script = ExtResource("14_p7agb")
 model = ExtResource("17_815db")
 sfx = ExtResource("18_prpj5")
 trap_type = 1
-icon = SubResource("Resource_uh01e")
+icon = ExtResource("16_xkgso")
 damage = 110
 crit_chance_mod = 1.0
 target_type = 0
 action_name = "Trap Door"
 one_time_use = false
 
-[sub_resource type="Resource" id="Resource_jd4tt"]
-metadata/__load_path__ = "res://ui_assets/battle/gags/inventory_portable_hole.png"
-
 [sub_resource type="Resource" id="Resource_qce66"]
 script = ExtResource("14_p7agb")
 model = ExtResource("20_hs0x2")
 sfx = ExtResource("21_uwxdx")
 trap_type = 2
-icon = SubResource("Resource_jd4tt")
+icon = ExtResource("19_ygsnx")
 damage = 150
 crit_chance_mod = 1.0
 target_type = 0
 action_name = "Portable Hole"
 one_time_use = false
-
-[sub_resource type="Resource" id="Resource_fpnsg"]
-metadata/__load_path__ = "res://ui_assets/battle/gags/inventory_tnt.png"
 
 [sub_resource type="Resource" id="Resource_tl7qg"]
 script = ExtResource("4_swcev")
@@ -121,7 +107,7 @@ model = ExtResource("20_xkotm")
 toss_time = 1.5
 animation = 2
 toss_sfx = ExtResource("21_dfefd")
-icon = SubResource("Resource_fpnsg")
+icon = ExtResource("22_pserm")
 damage = 190
 crit_chance_mod = 1.0
 target_type = 0
